@@ -1,123 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11th FEWACCI General Assembly | Abidjan 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
-    }
+<title>11th FEWACCI General Assembly | Abidjan 2026</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #168447;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fewacci-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.brand-text strong {
+    display: block;
+    color: #08783e;
+    font-size: 18px;
+}
+
+.brand-text span {
+    font-size: 12px;
+    color: #666;
+}
+
+.host-logo {
+    width: 180px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #08783e;
+    text-align: center;
+    padding: 16px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 520px;
+    background:
+        linear-gradient(rgba(0,92,52,.91), rgba(0,92,52,.91));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.eyebrow {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin: 0 0 18px;
+    line-height: 1.05;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 auto 30px;
+}
+
+.event-info {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #f5c518;
+    color: #222;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+/* WELCOME */
+
+.section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #08783e;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* EVENT HIGHLIGHTS */
+
+.highlights {
+    background: #f5f7f5;
+}
+
+.cards {
+    max-width: 1050px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 5px solid #08783e;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    color: #08783e;
+}
+
+/* HOST */
+
+.host-section {
+    text-align: center;
+}
+
+.hosts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 35px;
+}
+
+.hosts img {
+    max-width: 190px;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+/* FOOTER */
+
+footer {
+    background: #063c28;
+    color: white;
+    padding: 35px 8%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+footer strong {
+    color: #f5c518;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
 
     header {
-      background: #ffffff;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #075c3b;
+    .brand {
+        flex-direction: column;
+    }
+
+    .fewacci-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .host-logo {
+        width: 150px;
     }
 
     nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
+        display: inline-block;
+        margin: 8px;
     }
 
     .hero {
-      background: #075c3b;
-      color: white;
-      padding: 100px 8%;
-      text-align: center;
+        min-height: 480px;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
+        font-size: 37px;
     }
 
     .hero h2 {
-      font-size: 25px;
-      font-weight: normal;
+        font-size: 20px;
     }
 
-    .date {
-      margin-top: 30px;
-      font-size: 21px;
-      font-weight: bold;
+    .cards {
+        grid-template-columns: 1fr;
     }
 
-    .content {
-      padding: 60px 10%;
-      text-align: center;
+    .hosts {
+        flex-direction: column;
+        gap: 30px;
     }
+}
 
-    .content h2 {
-      color: #075c3b;
-      font-size: 32px;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">FEWACCI</div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#">Programme</a>
-    <a href="#">Speakers</a>
-    <a href="#">Practical Information</a>
-  </nav>
+    <div class="brand">
+
+        <img
+        src="fewacci-logo.png"
+        alt="FEWACCI Logo"
+        class="fewacci-logo">
+
+        <div class="brand-text">
+            <strong>FEWACCI</strong>
+            <span>
+            Federation of West African Chambers<br>
+            of Commerce and Industry
+            </span>
+        </div>
+
+    </div>
+
+    <img
+    src="cci-cotedivoire-logo.png"
+    alt="CCI Côte d'Ivoire"
+    class="host-logo">
+
 </header>
+
+
+<nav>
+
+<a href="index.html">HOME</a>
+
+<a href="#about">ABOUT</a>
+
+<a href="#">PROGRAMME</a>
+
+<a href="#">SPEAKERS</a>
+
+<a href="#">DELEGATIONS</a>
+
+<a href="#">PRACTICAL INFO</a>
+
+<a href="#">DOCUMENTS</a>
+
+</nav>
+
 
 <section class="hero">
 
-  <p>FEDERATION OF WEST AFRICAN CHAMBERS OF COMMERCE AND INDUSTRY</p>
+<div class="hero-content">
 
-  <h1>11th FEWACCI General Assembly</h1>
+<div class="eyebrow">
+WEST AFRICA'S REGIONAL PRIVATE SECTOR PLATFORM
+</div>
 
-  <h2>Regional Private Sector Dialogue & General Assembly</h2>
+<h1>
+11th FEWACCI<br>
+General Assembly
+</h1>
 
-  <div class="date">
-    28–29 September 2026<br>
-    Abidjan, Côte d'Ivoire
-  </div>
+<h2>
+Regional Private Sector Dialogue & General Assembly
+</h2>
+
+<div class="event-info">
+
+28–29 September 2026
+
+<br>
+
+Abidjan, Côte d'Ivoire
+
+</div>
+
+<div class="buttons">
+
+<a href="#" class="btn btn-primary">
+VIEW PROGRAMME
+</a>
+
+<a href="#" class="btn btn-outline">
+PRACTICAL INFORMATION
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<section class="content">
 
-  <h2>Welcome to the 11th FEWACCI General Assembly</h2>
+<section class="section" id="about">
 
-  <p>
-    The Federation of West African Chambers of Commerce and Industry
-    brings together leaders of Chambers of Commerce, regional institutions,
-    policymakers and private-sector representatives to advance regional
-    economic integration, trade and investment in West Africa.
-  </p>
+<h2 class="section-title">
+Welcome to the 11th FEWACCI General Assembly
+</h2>
+
+<div class="intro">
+
+<p>
+The Federation of West African Chambers of Commerce and Industry
+(FEWACCI) convenes its 11th General Assembly in Abidjan,
+Côte d'Ivoire.
+</p>
+
+<p>
+The meeting will bring together leaders of Chambers of Commerce
+and Industry, regional institutions, policymakers, development
+partners and private-sector representatives to strengthen
+regional economic integration, trade, investment and
+private-sector cooperation across West Africa.
+</p>
+
+</div>
 
 </section>
+
+
+<section class="section highlights">
+
+<h2 class="section-title">
+AGM Highlights
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Regional Dialogue</h3>
+
+<p>
+High-level dialogue between the West African private sector,
+regional institutions and policymakers.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>General Assembly</h3>
+
+<p>
+FEWACCI statutory discussions, institutional priorities
+and election of the new Bureau.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Regional Integration</h3>
+
+<p>
+Advancing practical private-sector engagement in trade,
+investment and regional economic integration.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section host-section">
+
+<h2 class="section-title">
+Organised by
+</h2>
+
+<div class="hosts">
+
+<img
+src="fewacci-logo.png"
+alt="FEWACCI">
+
+<img
+src="cci-cotedivoire-logo.png"
+alt="CCI Côte d'Ivoire">
+
+</div>
+
+</section>
+
 
 <footer>
-  © 2026 FEWACCI — Federation of West African Chambers of Commerce and Industry
+
+<strong>
+11th FEWACCI General Assembly
+</strong>
+
+<br>
+
+28–29 September 2026 | Abidjan, Côte d'Ivoire
+
+<br><br>
+
+Federation of West African Chambers of Commerce and Industry
+
+<br>
+
+© 2026 FEWACCI. All Rights Reserved.
+
 </footer>
 
 </body>
