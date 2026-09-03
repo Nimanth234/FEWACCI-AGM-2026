@@ -215,7 +215,65 @@ nav a:hover {
     max-height: 120px;
     object-fit: contain;
 }
+/* SPEAKERS */
 
+.speaker-grid {
+    max-width: 1150px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.speaker-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    transition: transform .2s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+.speaker-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #edf1ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.speaker-card h3 {
+    margin: 18px 15px 8px;
+    color: #08783e;
+    font-size: 18px;
+}
+
+.speaker-card p {
+    margin: 0 15px 22px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+    .speaker-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .speaker-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* FOOTER */
 
 footer {
@@ -320,7 +378,7 @@ footer strong {
 
 <a href="#programme">PROGRAMME</a>
 
-<a href="#">SPEAKERS</a>
+<a href="#speakers">SPEAKERS</a>
 
 <a href="#">DELEGATIONS</a>
 
@@ -512,7 +570,124 @@ investment and regional economic integration.
     </div>
 
 </section>
+    
+<section id="speakers" class="section">
 
+    <h2 class="section-title">Speakers</h2>
+
+    <p style="text-align:center; max-width:750px; margin:0 auto;">
+        Meet the distinguished leaders, policymakers and private-sector
+        representatives participating in the 11th FEWACCI Annual General Meeting.
+    </p>
+
+    <div class="speaker-grid">
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 1</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 2</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 3</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 4</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 5</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 6</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 7</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 8</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 9</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 10</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 11</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 12</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 13</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 14</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 15</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 16</h3>
+            <p>Position / Institution</p>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-photo">PHOTO</div>
+            <h3>Speaker 17</h3>
+            <p>Position / Institution</p>
+        </div>
+
+    </div>
+
+</section>
+    
 <section class="section host-section">
 
 <h2 class="section-title">
