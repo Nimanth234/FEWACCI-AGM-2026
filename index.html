@@ -274,6 +274,71 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+   /* DELEGATIONS */
+
+.delegation-grid {
+    max-width: 1150px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+.delegation-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 22px 15px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    border-top: 4px solid #08783e;
+}
+
+.delegation-logo {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f5f3;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.delegation-card h3 {
+    margin: 8px 0 5px;
+    color: #08783e;
+    font-size: 17px;
+}
+
+.delegation-card p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.delegation-category {
+    max-width: 1150px;
+    margin: 55px auto 20px;
+    color: #08783e;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .delegation-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .delegation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    
 /* FOOTER */
 
 footer {
@@ -380,7 +445,7 @@ footer strong {
 
 <a href="#speakers">SPEAKERS</a>
 
-<a href="#">DELEGATIONS</a>
+<a href="#delegations">DELEGATIONS</a>
 
 <a href="#">PRACTICAL INFO</a>
 
@@ -682,6 +747,171 @@ investment and regional economic integration.
             <div class="speaker-photo">PHOTO</div>
             <h3>Speaker 17</h3>
             <p>Position / Institution</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="delegations" class="section">
+
+    <h2 class="section-title">Delegations</h2>
+
+    <p style="text-align:center; max-width:800px; margin:0 auto;">
+        The 11th FEWACCI Annual General Meeting brings together
+        national Chambers of Commerce, regional institutions,
+        government representatives, international partners,
+        private-sector leaders and development institutions.
+    </p>
+
+    <h3 class="delegation-category">
+        National Chamber Delegations
+    </h3>
+
+    <div class="delegation-grid">
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Benin</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Burkina Faso</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Cabo Verde</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Côte d'Ivoire</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>The Gambia</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Ghana</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Guinea</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Guinea-Bissau</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Liberia</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Mali</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Niger</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Nigeria</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Senegal</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Sierra Leone</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>Togo</h3>
+            <p>National Chamber of Commerce</p>
+        </div>
+
+    </div>
+
+
+    <h3 class="delegation-category">
+        Regional & Government Delegations
+    </h3>
+
+    <div class="delegation-grid">
+
+        <div class="delegation-card">
+            <div class="delegation-logo">LOGO</div>
+            <h3>ECOWAS Commission</h3>
+            <p>Regional Institutions</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">DELEGATION</div>
+            <h3>Government Representatives</h3>
+            <p>Trade, Industry, Digital Economy & Finance</p>
+        </div>
+
+    </div>
+
+
+    <h3 class="delegation-category">
+        International & Private Sector Delegations
+    </h3>
+
+    <div class="delegation-grid">
+
+        <div class="delegation-card">
+            <div class="delegation-logo">PARTNERS</div>
+            <h3>International Partners</h3>
+            <p>EU, Spain, Portugal & Development Agencies</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">BUSINESS</div>
+            <h3>Private Sector Leaders</h3>
+            <p>SMEs, Large Enterprises & Investors</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">FINANCE</div>
+            <h3>Financial Institutions</h3>
+            <p>Banks, Finance Institutions & Fintech Actors</p>
+        </div>
+
+        <div class="delegation-card">
+            <div class="delegation-logo">PARTNERS</div>
+            <h3>Development & Technical Partners</h3>
+            <p>Development Agencies & Technical Institutions</p>
         </div>
 
     </div>
