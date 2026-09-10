@@ -344,6 +344,50 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+    /* PRACTICAL INFO */
+
+.practical-grid {
+    max-width: 1100px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.practical-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 28px 24px;
+    border-top: 4px solid #08783e;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.practical-card h3 {
+    color: #08783e;
+    margin: 0 0 12px;
+    font-size: 19px;
+}
+
+.practical-card p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .practical-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .practical-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    
     
 /* FOOTER */
 
@@ -453,7 +497,7 @@ footer strong {
 
 <a href="#delegations">DELEGATIONS</a>
 
-<a href="#">PRACTICAL INFO</a>
+<a href="#practical-info">PRACTICAL INFO</a>
 
 <a href="#">DOCUMENTS</a>
 
@@ -963,6 +1007,73 @@ investment and regional economic integration.
             <div class="delegation-logo">PARTNERS</div>
             <h3>Development & Technical Partners</h3>
             <p>Development Agencies & Technical Institutions</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="practical-info" class="section">
+
+    <h2 class="section-title">Practical Information</h2>
+
+    <p style="text-align:center; max-width:800px; margin:0 auto;">
+        Essential information for delegates attending the
+        11th FEWACCI Annual General Meeting in Abidjan, Côte d'Ivoire.
+    </p>
+
+    <div class="practical-grid">
+
+        <div class="practical-card">
+            <h3>Event Dates</h3>
+            <p>
+                27 September 2026 – Arrival of delegates<br>
+                28–29 September 2026 – Official AGM activities
+            </p>
+        </div>
+
+        <div class="practical-card">
+            <h3>Arrival</h3>
+            <p>
+                Delegates are expected to arrive in Abidjan
+                on Sunday, 27 September 2026.
+            </p>
+        </div>
+
+        <div class="practical-card">
+            <h3>Accommodation</h3>
+            <p>
+                Three nights of accommodation are provided
+                for the Head of Delegation of each eligible
+                National Chamber delegation.
+            </p>
+        </div>
+
+        <div class="practical-card">
+            <h3>Venue</h3>
+            <p>
+                Abidjan, Côte d'Ivoire<br>
+                Hosted by the Chamber of Commerce and Industry
+                of Côte d'Ivoire.
+            </p>
+        </div>
+
+        <div class="practical-card">
+            <h3>Travel Information</h3>
+            <p>
+                Delegates are requested to provide their
+                arrival and departure dates, flight details,
+                arrival point and accommodation requirements.
+            </p>
+        </div>
+
+        <div class="practical-card">
+            <h3>Official Programme</h3>
+            <p>
+                Board Meeting, General Assembly and Elections,
+                Official Dinner, High-Level Policy Dialogue
+                and Closing Cocktail.
+            </p>
         </div>
 
     </div>
